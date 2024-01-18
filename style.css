@@ -1,0 +1,292 @@
+
+
+/* Update header background and text color */
+header.masthead {
+    background-color: #ffffff; /* Light pastel pink */
+    color: #323232; /* Soft coral pink */
+}
+
+/* Update section background color */
+section {
+    background-color: #ffffff; /* Light peach pastel */
+}
+
+/* Update button colors */
+.btn-primary {
+    background-color: #012061; /* Light pink pastel */
+    border:none;
+    color: #fff; /* White text */
+    --bs-btn-hover-bg: #374093;
+    --bs-btn-hover-border-color: #242424;
+    --bs-btn-active-bg: #2930b0;
+}
+
+/* Additional CSS for fade-in effect */
+.fade-in {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.fade-in.active {
+    opacity: 1;
+}
+
+/* Additional CSS for the layout and animation */
+.fly-in-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0; /* Adjust the padding as needed */
+}
+
+.fly-in-text {
+    flex: 1;
+    padding-right: 50px; /* Adjust the spacing between text and image */
+}
+
+.fly-in-image {
+    flex: 1;
+    opacity: 0; /* Start with the image hidden */
+    transition: opacity 1s ease-in-out; /* Add a transition effect for smoother appearance */
+}
+
+.fly-in-image.fly-in {
+    opacity: 1;
+}
+
+/* Update link color */
+a {
+    color: #fff3f3;
+}
+
+/* Update hover effects for links */
+a:hover {
+    color: #ffdee2;
+}
+
+/* Update footer background and text color */
+footer {
+    background-color: #ffffff;
+    color: #9785ff;
+}
+
+/* Add padding to sections for spacing */
+section {
+    padding: 80px 0;
+}
+
+#mainNav.navbar-shrink {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #96a1fe;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(140, 166, 245);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity ease-in-out 0.25s;
+}
+
+/*#mainNav {*/
+/*    padding-top: 1rem;*/
+/*    padding-bottom: 1rem;*/
+/*    background-color: #21252900;*/
+/*}*/
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #004498;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+    color: #383838;
+}
+
+/* Theme switch */
+.theme-switch {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.theme-toggle {
+    display: none;
+}
+
+.theme-switch-label {
+    width: 50px;
+    height: 26px;
+    background-color: #49579d;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.theme-switch-label::before {
+    content: '';
+    width: 22px;
+    height: 22px;
+    background-color: #94fb92; /* Default purple color */
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+}
+
+/* Light Mode */
+body:not(.dark-mode) .theme-switch-label::before {
+    background-color: #90beff; /* Sunset orange color */
+}
+
+body.dark-mode .theme-switch-label {
+    width: 50px;
+    height: 26px;
+    background-color: #222;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.theme-toggle:checked + .theme-switch-label {
+    background-color: #333;
+}
+
+.theme-toggle:checked + .theme-switch-label::before {
+    transform: translateX(24px);
+}
+
+
+/* Dark Theme Styles */
+body.dark-mode {
+    background-color: #242424; /* Dark background color */
+    color: #fff; /* Dark text color */
+}
+
+/* Dark Mode */
+body.dark-mode header.masthead {
+    background-color: #242424; /* Light pastel pink */
+    background-image: url("assets/Dark2.png");
+    color: #ffffff; /* White text color */
+}
+
+/* Dark Mode */
+body.dark-mode .btn-primary {
+    background-color: #317830; /* Dark purple background */
+    border: none;
+    color: #fff; /* White text */
+    --bs-btn-hover-bg: #3b206d; /* Darker purple hover background */
+    --bs-btn-hover-border-color: #fff; /* White hover border */
+    --bs-btn-active-bg: #cb90f8; /* Light pink pastel active background */
+}
+
+/*---------------------------------------------------------------*/
+
+/* Dark Mode - Update link color */
+body.dark-mode a {
+    color: #90f8a3; /* Light pink pastel */
+}
+
+/* Dark Mode - Update hover effects for links */
+body.dark-mode a:hover {
+    color: #c1fcc6; /* Lighter pink hover color */
+}
+
+/* Dark Mode - Update footer background and text color */
+body.dark-mode footer {
+    background-color: #111; /* Dark background color */
+    color: #90f89c; /* Light pink text color */
+}
+
+/* Dark Mode - Add padding to sections for spacing */
+body.dark-mode section {
+    padding: 80px 0;
+}
+
+/* Dark Mode - Update navbar when scrolled */
+body.dark-mode #mainNav.navbar-shrink {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #131313; /* Darker background color */
+    color: #ffffff;
+}
+
+/* Dark Mode - Update portfolio item hover background */
+body.dark-mode #portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    background: #222; /* Darker background color */
+}
+
+/* Dark Mode - Update active and hover link color in navbar */
+body.dark-mode #mainNav .navbar-nav .nav-item .nav-link.active,
+body.dark-mode #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #9cffa5; /* Lighter pink hover color */
+}
+
+/* Update section background color */
+body.dark-mode section {
+    background-color: #242424; /* Light peach pastel */
+}
+
+body.dark-mode #portfolio .portfolio-item .portfolio-caption {
+    padding: 1.5rem;
+    text-align: center;
+    /* background-color: #515151; */
+}
+
+#portfolio .portfolio-item .portfolio-caption {
+    background: rgba(0, 0, 0, 0); /* Transparent background */;
+}
+
+body.dark-mode .modal-content {
+
+    background-color: #242424;
+}
+
+body.dark-mode section#contact {
+    background-color: #242424;
+    background-image: url("assets/img/map-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*------------------------------------------------------------------------------------*/
+
+
+/* Add this CSS to your styles */
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-img {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Optional: Add styling to images for consistency */
+.carousel-img img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.image {
+    max-width: 50%;
+    position: relative;
+    margin: auto;
+    display: block;
+}
+
+
+/*--------------------------------------------------------------------------*/
